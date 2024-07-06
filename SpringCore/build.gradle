@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.thewhitemage13'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+
+    implementation 'org.springframework:spring-context:6.1.10'
+    implementation 'org.springframework:spring-core:6.1.10'
+
+    implementation 'jakarta.annotation:jakarta.annotation-api:3.0.0'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
